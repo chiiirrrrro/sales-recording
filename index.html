@@ -37,6 +37,67 @@
         .submit-btn { width: 100%; padding: 16px; background: #2196f3; color: white; border: none; border-radius: 8px; font-size: 18px; font-weight: bold; cursor: pointer; box-shadow: 0 4px 6px rgba(33, 150, 243, 0.3); }
         .submit-btn:disabled { background: #bbb; box-shadow: none; cursor: not-allowed; }
         .submit-btn:active { background: #1e88e5; }
+
+            /* ダークモード対応 */
+@media (prefers-color-scheme: dark) {
+    body {
+        background: #121212;
+    }
+    .container {
+        background: #1e1e1e;
+        color: #e0e0e0;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+    }
+    h2 {
+        color: #fff;
+    }
+    label {
+        color: #aaa;
+    }
+    
+    .item-btn {
+        background: #2a2a2a;
+        border-color: #444;
+        color: #eee;
+    }
+    .item-btn.selected {
+        background: #1a365d;
+        border-color: #2196f3;
+        color: #64b5f6;
+    }
+    .item-price {
+        color: #aaa;
+    }
+    
+    .qty-btn {
+        background: #333;
+        color: #fff;
+    }
+    .qty-btn:active {
+        background: #444;
+    }
+    
+    .pay-btn {
+        background: #2a2a2a;
+        border-color: #444;
+        color: #eee;
+    }
+    .pay-btn.selected {
+        background: #1b4332;
+        border-color: #4caf50;
+        color: #81c784;
+    }
+    
+    /* 計算表示エリア */
+    .summary {
+        background: #252525;
+        border-left-color: #ff9800;
+    }
+    .total-line {
+        border-top-color: #333;
+        color: #ffb74d;
+    }
+}
     </style>
 </head>
 <body>
