@@ -46,22 +46,23 @@
     <h2>屋台用レジハンディ</h2>
     <p class='center'><a href="リンク先のURL">喫茶用はこちら(制作中、未完成)</a></p>
     
-    <label>商品選択</label>
+    <label>①商品選択</label>
     <div class="item-grid" id="itemGrid"></div>
     
-    <label>個数</label>
+    <label>②個数</label>
     <div class="qty-container">
         <button class="qty-btn" onclick="changeQty(-1)">-</button>
         <span id="qty-display">1</span>
         <button class="qty-btn" onclick="changeQty(1)">+</button>
     </div>
     
-    <label>支払い方法</label>
+    <label>③支払い方法</label>
     <div class="pay-container">
         <button class="pay-btn" id="pay-cash" onclick="selectPayment('現金')">現金</button>
         <button class="pay-btn" id="pay-paypay" onclick="selectPayment('PayPay')">PayPay</button>
     </div>
     
+    <label>④合計金額の確認</label>
     <div class="summary">
         <div><span>単価:</span><span id="view-price">0円</span></div>
         <div class="total-line"><span>合計金額:</span><span id="view-subtotal">0円</span></div>
